@@ -1,0 +1,11 @@
+ethereum:
+  mainnet:
+    default_provider: alchemy
+
+foundry:
+  priority_fee: 0
+  base_fee: 0
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
