@@ -46,7 +46,8 @@ def addBalance_f(
         if i == num:
             break
 
-    # Fail in the middle (is test)
+    assert num != 0  # dev: nooo
+    # Fail in the middle (ics test)
     # Fails because was already set above.
     self.registry.register(msg.sender)
 

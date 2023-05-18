@@ -2,10 +2,18 @@ ethereum:
   mainnet:
     default_provider: alchemy
 
-foundry:
-  priority_fee: 0
-  base_fee: 0
-  fork:
-    ethereum:
-      mainnet:
-        upstream_provider: alchemy
+#foundry:
+  #host: http://34.235.148.238:8545
+# foundry:
+  # host: http://44.200.33.91:8545
+  # priority_fee: 0
+  # base_fee: 0
+  # fork:
+  #   ethereum:
+  #     mainnet:
+  #       upstream_provider: alchemy
+
+
+hardhat:
+  port: 8556
+  hardhat_config_file: ./hardhat.config.ts
