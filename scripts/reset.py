@@ -7,7 +7,6 @@ from ape import project
 
 
 def delete_directories():
-
     directories = [
         project.contracts_folder,
         project.tests_folder,
