@@ -1,13 +1,11 @@
 import shutil
 from pathlib import Path
-from tkinter.font import nametofont
 
 import click
 from ape import project
 
 
 def delete_directories():
-
     directories = [
         project.contracts_folder,
         project.tests_folder,
