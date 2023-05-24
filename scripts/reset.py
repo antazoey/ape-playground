@@ -12,6 +12,7 @@ def delete_directories():
         project.contracts_folder,
         project.tests_folder,
         project.scripts_folder,
+        project.local_project._cache_folder,
     ]
     whitelisted_names = [
         n
