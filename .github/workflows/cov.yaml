@@ -12,7 +12,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: ApeWorX/github-action@v1
+    - uses: ApeWorX/github-action@feat/much-upgrade
+      with:
+        python-version: "3.10"
+        ape-version-pin: "git+https://github.com/aladagemre/django-notification.git@2927346f4c513a217ac8ad076e494dd1adbf70e1"
+
     - run: ape test --coverage
 
     - uses: codecov/codecov-action@v3
