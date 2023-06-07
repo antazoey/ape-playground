@@ -1,3 +1,14 @@
+name: ape-playground
+
 test:
   coverage:
-    show: True
+    exclude:
+      - method_name: "DEBUG_*"
+      - contract_name: "Debug"
+      - contract_name: Ignore*
+        method_name: FOOBAR_*
+
+    reports:
+      terminal: True
+      html: True
+      xml: True

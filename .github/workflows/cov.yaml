@@ -1,0 +1,25 @@
+on: ["push", "pull_request"]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+name: Test
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: ApeWorX/github-action@v1
+    - run: ape test --coverage
+
+    - uses: codecov/codecov-action@v3
+      name: Upload to CodeCov
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: .build/coverage.xml
+        flags: unittests # optional
+        fail_ci_if_error: true # optional (default = false)
+        verbose: true # optional (default = false)
