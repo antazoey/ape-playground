@@ -15,7 +15,7 @@ jobs:
     - uses: antazoey/github-action@feat/much-upgrade
       with:
         python-version: "3.10"
-        ape-remote-git-version: "https://github.com/antazoey/ape.git@BOTH"
+        ape-remote-git-version: "https://github.com/antazoey/ape.git@both"
         ape-plugins-list: vyper@git+https://github.com/antazoey/ape-vyper.git@test/cov
 
     - run: ape test --coverage
