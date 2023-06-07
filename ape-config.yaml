@@ -1,14 +1,19 @@
 name: ape-playground
 
-test:
-  coverage:
-    exclude:
-      - method_name: "DEBUG_*"
-      - contract_name: "Debug"
-      - contract_name: Ignore*
-        method_name: FOOBAR_*
+plugins:
+  - name: vyper
+    version: ">=0.6.0,<=0.7"
+    #version: git+https://github.com/antazoey/ape-vyper.git@test/cov
 
-    reports:
-      terminal: True
-      html: True
-      xml: True
+# test:
+#   coverage:
+#     exclude:
+#       - method_name: "DEBUG_*"
+#       - contract_name: "Debug"
+#       - contract_name: Ignore*
+#         method_name: FOOBAR_*
+
+#     reports:
+#       terminal: True
+#       html: True
+#       xml: True
