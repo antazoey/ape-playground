@@ -15,7 +15,7 @@ jobs:
     - uses: antazoey/github-action@feat/much-upgrade
       with:
         python-version: "3.10"
-        ape-version-pin: "git+https://github.com/antazoey/ape.git@feat/cv"
+        ape-version-pin: "git+https://github.com/antazoey/ape.git@feat/cv#egg=eth-ape"
         ape-plugins-list: vyper@git+https://github.com/antazoey/ape-vyper.git@test/cov
 
     - run: ape test --coverage
