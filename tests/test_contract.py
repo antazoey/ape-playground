@@ -9,7 +9,7 @@ def test_happy_path(contract, account):
     receipt = contract.foo_method(5, 6, sender=account)
 
     # This should cover the auto-getter hit.
-    # assert contract._number() == 11
+    assert contract._number() == 11
 
     assert receipt.return_value is True
 
