@@ -15,12 +15,6 @@ def view_method() -> bool:
     return True
 
 
-@view
-@external
-def add_method_to_watch_cov_drop() -> bool:
-    return True
-
-
-@external
-def DEBUG_ignore_me() -> bool:
-    return True
+# @external
+# def DEBUG_ignore_me() -> bool:
+#     return True

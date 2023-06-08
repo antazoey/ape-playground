@@ -18,6 +18,6 @@ test:
         method_name: FOOBAR_*
 
     reports:
-      terminal: True
+      terminal: {"verbose": true}
       html: True
       xml: True
