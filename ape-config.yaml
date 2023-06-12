@@ -18,6 +18,8 @@ test:
         method_name: FOOBAR_*
 
     reports:
-      terminal: True
+      terminal:
+        verbose:
+          True
       html: True
       xml: True
