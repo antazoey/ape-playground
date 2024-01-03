@@ -1,0 +1,19 @@
+default_ecosystem: polygon
+
+geth:
+  polygon:
+    mainnet:
+      uri: https://polygon.llamarpc.com
+
+ethereum:
+  local:
+    default_provider: hardhat
+  mainnet_fork:
+    default_provider: hardhat
+
+polygon:
+  default_network: mainnet_fork
+  local:
+    default_provider: hardhat
+  mainnet_fork:
+    default_provider: hardhat
