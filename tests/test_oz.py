@@ -14,7 +14,7 @@ def contract(project, account):
 
 @pytest.fixture
 def oz5(project):
-    return project.dependencies["OpenZeppelin"]["v5.0.1"]
+    return project.dependencies["OpenZeppelin"]["5.0.1"]
 
 
 def test_oz(oz5):
