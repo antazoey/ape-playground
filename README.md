@@ -1,9 +1,3 @@
-# ape-playground
+# OpenZeppelin 5.0.1
 
-Do stuff and then reset!
-
-To reset, run:
-
-```bash
-ape run reset
-```
+Show how to use OpenZeppelin 5.0.1 in a project!
