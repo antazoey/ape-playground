@@ -1,0 +1,6 @@
+name: demo
+
+dependencies:
+ - name: apetrace
+   github: antazoey/ApeTrace
+   ref: main
